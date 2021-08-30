@@ -5,23 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task - Cookie</title>
+    <style>
+    html, body {
+        height: 100%;
+    }
+    html {
+        display: table;
+        margin: auto;
+    }
+    h1{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    label{
+        font-weight: 700;
+    }
+    button{
+        color: white;
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    </style>
 </head>
 <body>
     <h1>Set a new cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
+    <input id="key1" type="text"></input>
     <label>Value</label>
-    <input type="text"></input>
-    <button>ADD</button>
+    <input  id="val" type="text"></input>
+    <button id="addbtn">ADD</button>
     <h1>Get value of the cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
-    <button>GET</button>
+    <input id="key2" type="text"></input>
+    <button id="getbtn">GET</button>
     <h1>Delete the cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
-    <button>Delete</button>
+    <input id="key3" type="text"></input>
+    <button id="delbtn">Delete</button>
     <h1>List all cookies</h1>
-
+    <table id="list">
+    </table>
+    <script src="main.js"></script>
 </body>
 </html>
