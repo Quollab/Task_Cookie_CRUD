@@ -10,20 +10,30 @@ set.onclick = function(){
     if(value1.value.length==0||keyS.value.length==0)
         alert("Cannot leave empty")
     else
-        alert("Cookie created with value "+ value1.value)};
+        alert("Cookie created with value "+ value1.value)
+    
+    
+    };
+
 get.onclick = function(){
   
-        alert("The value of the cookie is "+ cookieGet(keyG.value))};
+        alert("The value of the cookie is "+ cookieGet(keyG.value))
+        
+       
+    };
     
 
 del.onclick = function(){
     cookieDel(keyD.value)
     alert("Cookie deleted")
+    
+    
 };
 
 function cookieSet(key,value) {
 
 	document.cookie = key+"="+value;
+    
     
 }
 
@@ -37,15 +47,12 @@ function cookieGet(key) {
 
 	}
 	return null;
+    
 }
-function Listofcookies(key){
-    var name = key + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0;i < ca.length;i++) {
-		var c = ca[i];
-		while (c.charAt(0)==' ') c = c.substring(1,c.length);
-		if (c.indexOf(name) == 0) 
-        document.write(c.substring(name.length,c.length));
+function Listofcookies(){
+	var arr = document.cookie.split(';');
+	for(var i=0;i < arr.length;i++) {
+		document.write(arr[i]+"<br>")
 }
 }
 
@@ -53,4 +60,6 @@ function cookieDel(key) {
         document.cookie = key +'=; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
       
 }
+
+
 
