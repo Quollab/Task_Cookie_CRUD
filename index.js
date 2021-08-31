@@ -9,7 +9,7 @@ function setCookie(){
     show();
 }
 function getCookie(){
-    let get = document.getElementById("getkey");
+    let get = document.getElementById("getkey").value;
     let arr = document.cookie.split(';');
     let len = arr.length;
     // console.log(len);
@@ -17,24 +17,26 @@ function getCookie(){
     // console.log(match);
     for(let i=0;i<len;i++){
         let match=arr[i].split('=');
-        console.log(match[0]);
+        console.log(match[1]);
         // console.log(i);
         if(match[0]=get){
-            console.log(match[0],get)
+            console.log(match[0],get,match[1])
             console.log(i*0);
             // console.log(match[1]);
-            return document.getElementById("getdis").value=match[1];
+            return document.getElementById("getdis").value = match[1];
             // break;
         }
     }
 
 }
 function deleteCookie(){
-    let del = document.getElementById("delkey");
+    let del = document.getElementById("delkey").value;
     let key = del + '=';
     console.log(key)
     console.log(del)
-    document.cookie = key + ";max-age=0";
+    document.cookie = del + "=;max-age=0";
+    show();
+}
     // let arr = document.cookie.split(';');
     // let len = arr.length;
     // console.log(len);
@@ -47,8 +49,7 @@ function deleteCookie(){
     //         // document.cookie
     //     }
     // }
-    show();
-}
+    
 
 function show(){
     let arr = document.cookie.split(';');
