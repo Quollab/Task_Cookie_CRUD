@@ -1,0 +1,35 @@
+
+.Cookie{ 
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top:5%;
+    border: solid black 2px;
+    background-image: url('https://wi.wallpapertip.com/wsimgs/0-3788_simple-light-blue-background.jpg');
+
+}
+
+.btn{
+
+    background-color: rgb(35, 180, 247);
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    cursor:pointer;
+    margin-left:40%;
+    
+}
+.btn:hover{
+    background-color: cadetblue;
+}
+
+.header{
+    color: rgb(58, 9, 68);
+    font-size: 40px;
+    margin-left:40%;
+}
+
+.txt{
+    margin-left:20%;
+    font-size: 20px;
+}
+
