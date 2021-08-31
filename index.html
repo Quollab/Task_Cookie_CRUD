@@ -9,19 +9,21 @@
 <body>
     <h1>Set a new cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
+    <input type="text" id="key"></input>
     <label>Value</label>
-    <input type="text"></input>
-    <button>ADD</button>
+    <input type="text" id="value"></input>
+    <button class="btn" onclick="setCookie()">ADD</button>
     <h1>Get value of the cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
-    <button>GET</button>
+    <input type="text" id="getkey"></input>
+    <button class="btn" onclick="getCookie()">GET</button>
+    <br><input type="text" id="getdis">
     <h1>Delete the cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
-    <button>Delete</button>
+    <input type="text" id="delkey"></input>
+    <button class="btn" onclick="deleteCookie()">Delete</button>
     <h1>List all cookies</h1>
-
+    <div><input id="show"></div>
+    <script src="index.js"></script>
 </body>
 </html>
