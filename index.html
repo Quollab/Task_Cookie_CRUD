@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task - Cookie</title>
+    <link rel="stylesheet" href="cookie.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Set a new cookie</h1>
-    <label>Key</label>
-    <input type="text"></input>
-    <label>Value</label>
-    <input type="text"></input>
-    <button>ADD</button>
-    <h1>Get value of the cookie</h1>
-    <label>Key</label>
-    <input type="text"></input>
-    <button>GET</button>
-    <h1>Delete the cookie</h1>
-    <label>Key</label>
-    <input type="text"></input>
-    <button>Delete</button>
-    <h1>List all cookies</h1>
+    <div class = "Cookie">
+        <h class="header">Set Cookie</h>
 
+        <p class="txt">Enter the cookie key : <input type ="text" id="keyS"></p>
+        <p class="txt">Enter the cookie value : <input type ="text" id="value1"></p>
+        <p><button class="btn" id="set">Set Cookie</button></span></p>
+        <hr size="2px" color="black"><br>
+        
+        <h class="header">Get Cookie</h>
+        <p class="txt">Enter the cookie key : <input type ="text" id="keyG"></p>
+        <p ><button class="btn" id="get">Get Cookie</button></p>
+        <hr size="3px" color="black"><br>
+
+        <h class="header" >Delete Cookie</h>
+        <p class="txt">Enter the cookie key : <input type ="text" id="keyD"></p>
+
+        <p ><button class="btn" id="del">Delete Cookie</button></p>
+        <p ><button class="btn" id="del" onclick="Listofcookies()"> List of Cookies</button></p>
+        
+        
+    </div>
+    <script src="cookie.js"></script>
 </body>
 </html>
