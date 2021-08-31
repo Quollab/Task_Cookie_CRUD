@@ -6,22 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task - Cookie</title>
 </head>
-<body>
-    <h1>Set a new cookie</h1>
+<body><div class="cookie">
+    <div class="set">
+    <h1 style="display: flex;justify-content: center;">Set a new cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
+    <input type="text" id="key"></input>
     <label>Value</label>
-    <input type="text"></input>
-    <button>ADD</button>
-    <h1>Get value of the cookie</h1>
+    <input type="text" id="value"></input>
+    <button class="btn" onclick="setCookie()">ADD</button><br></div>
+    <div class="get">
+    <h1 style="display: flex;justify-content: center;">Get value of the cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
-    <button>GET</button>
-    <h1>Delete the cookie</h1>
+    <input type="text" id="getkey"></input>
+    <button class="btn" onclick="getCookie()">GET</button>
+    <br><br>Value = <input type="text" id="getdis"></div>
+    <div class="del">
+    <h1 style="display: flex;justify-content: center;">Delete the cookie</h1>
     <label>Key</label>
-    <input type="text"></input>
-    <button>Delete</button>
+    <input type="text" id="delkey"></input>
+    <button class="btn" onclick="deleteCookie()">Delete</button></div>
     <h1>List all cookies</h1>
-
+    <script src="index.js"></script>
+    <style>
+        .cookie{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .set{
+            border: 1px solid black;
+            padding: 30px;
+        }
+        .get{
+            border: 1px solid black;
+            padding: 30px;
+        }
+        .del{
+            border: 1px solid black;
+            padding: 30px;
+        }
+        
+    </style>
+</div>
 </body>
 </html>
