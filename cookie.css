@@ -2,7 +2,7 @@
 .Cookie{ 
     margin-left: 30%;
     margin-right: 30%;
-    margin-top:5%;
+    margin-top:2%;
     border: solid black 2px;
     background-image: url('https://wi.wallpapertip.com/wsimgs/0-3788_simple-light-blue-background.jpg');
 
@@ -24,12 +24,12 @@
 
 .header{
     color: rgb(58, 9, 68);
-    font-size: 40px;
+    font-size: 35px;
     margin-left:40%;
 }
 
 .txt{
     margin-left:20%;
-    font-size: 20px;
+    font-size: 15px;
 }
 
