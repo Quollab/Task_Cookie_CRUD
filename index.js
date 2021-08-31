@@ -39,6 +39,7 @@ function getCookie(){
       }
       else{
            console.log('--something went wrong---');
+           alert("No match found!");
       }
    }
 
@@ -75,6 +76,6 @@ function show(){
     let len = arr.length;
     console.log(arr)
     for(let i=0;i<len;i++){
-        document.getElementById("show").value=arr[i];
+        document.write(arr[i]+"<br>")
     }
 }
